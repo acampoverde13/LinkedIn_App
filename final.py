@@ -58,12 +58,12 @@ lr.fit(X_train, y_train)
 y_pred = lr.predict(X_test)
 ui_person = []
 
-income = st.number_input("What is their income level (1-9)",min_value=1, max_value=9,value= None,step=1, placeholder="")
-education = st.number_input("What is their education level (1-8)",min_value=1, max_value=8,step=1, placeholder="-")
-parent = st.number_input("Are they a parent? (1-Yes,0-No)", min_value=0,max_value=1,step=1, placeholder="-")
-married = st.number_input("Are they married? (1-Yes,0-No)", min_value=0,max_value=1,step=1, placeholder="-")
-gender = st.number_input("What is their gender? (1-Male,0-Female)", min_value=0,max_value=1,step=1, placeholder="-")
-age = st.number_input("What is their age?",step=1, placeholder="")
+income = st.number_input("What is their income level (1-9)",min_value=1, max_value=9, value= None, step=1)
+education = st.number_input("What is their education level (1-8)",min_value=1, max_value=8, value= None, step=1)
+parent = st.number_input("Are they a parent? (1-Yes,0-No)", min_value=0,max_value=1, value= None, step=1)
+married = st.number_input("Are they married? (1-Yes,0-No)", min_value=0,max_value=1, value= None, step=1)
+gender = st.number_input("What is their gender? (1-Male,0-Female)", min_value=0,max_value=1, value= None, step=1)
+age = st.number_input("What is their age?", min_value=1, value= None, step=1)
 
 ui_person.extend([income, education, parent, married, gender, age])
 
