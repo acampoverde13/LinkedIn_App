@@ -8,15 +8,15 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
 
-st.markdown("# Welcome to the LinkedIn User Prediction Tool!")
-st.markdown("Please enter values for all of the user features below:")
+st.markdown("## Welcome to the LinkedIn User Prediction Tool!")
+st.markdown("###Please enter values for all of the user features below:")
 st.write("""
          Use this information below for income & education levels:\n
          For income:\n
-            1   Less than $10,000\t             2	10 to under $20,000\n
-            3	20 to under $30,000\t           4	30 to under $40,000\n
-            5	40 to under $50,000\t           6	50 to under $75,000\n
-            7	75 to under $100,000\t          8	100 to under $150,000\n
+            1   Less than $10,000\n             2	10 to under $20,000\n
+            3	20 to under $30,000\n           4	30 to under $40,000\n
+            5	40 to under $50,000\n           6	50 to under $75,000\n
+            7	75 to under $100,000\n          8	100 to under $150,000\n
             9	$150,000 or more\n
          For education:\n
             1	Less than high school (Grades 1-8 or no formal schooling)\n
@@ -26,7 +26,7 @@ st.write("""
             5	Two-year associate degree from a college or university\n
             6	Four-year college or university degree/Bachelors degree (e.g., BS, BA, AB)\n
             7	Some postgraduate or professional schooling, no postgraduate degree (e.g. some graduate school)\n
-            8	Postgraduate or professional degree (e.g., MA, MS, PhD, MD, JD)
+            8	Postgraduate or professional degree (e.g., MA, MS, PhD, MD, JD)\n
          """)
 
 def clean_sm(x):
@@ -67,9 +67,9 @@ predicted_class = lr.predict([ui_person])
 probs = lr.predict_proba([ui_person])
 
 if predicted_class == 1:
-    st.write("This person is likely a LinkedIn user")
+    st.write("##This person is likely a LinkedIn user")
 else:
-    st.write("This person is likely not a LinkedIn user")
+    st.write("##This person is likely not a LinkedIn user")
 
 #st.write(f"This person is likely class: {predicted_class[0]}") # 0=not LinkedIn user, 1=LinkedIn user
-st.write(f"The probability that this person is a LinkedIn user is: {probs[0][1]}")
+st.write(f"##The probability that this person is a LinkedIn user is: {probs[0][1]}")
