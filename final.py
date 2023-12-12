@@ -13,10 +13,14 @@ st.markdown("###Please enter values for all of the user features below:")
 st.write("""
          Use this information below for income & education levels:\n
          For income:\n
-            1   Less than $10,000\n             2	10 to under $20,000\n
-            3	20 to under $30,000\n           4	30 to under $40,000\n
-            5	40 to under $50,000\n           6	50 to under $75,000\n
-            7	75 to under $100,000\n          8	100 to under $150,000\n
+            1   Less than $10,000\n
+            2	10 to under $20,000\n
+            3	20 to under $30,000\n           
+            4	30 to under $40,000\n
+            5	40 to under $50,000\n           
+            6	50 to under $75,000\n
+            7	75 to under $100,000\n          
+            8	100 to under $150,000\n
             9	$150,000 or more\n
          For education:\n
             1	Less than high school (Grades 1-8 or no formal schooling)\n
