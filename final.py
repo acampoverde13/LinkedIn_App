@@ -58,22 +58,21 @@ lr.fit(X_train, y_train)
 y_pred = lr.predict(X_test)
 ui_person = []
 
-income = st.number_input("What is their income level (1-9)", max_value=9,step=1, placeholder="")
-education = st.number_input("What is their education level (1-8)", max_value=8,step=1, placeholder="-")
-parent = st.number_input("Are they a parent? (1-Yes,0-No)", max_value=1,step=1, placeholder="-")
-married = st.number_input("Are they married? (1-Yes,0-No)", max_value=1,step=1, placeholder="-")
-gender = st.number_input("What is their gender? (1-Male,0-Female)", max_value=1,step=1, placeholder="-")
+income = st.number_input("What is their income level (1-9)",min_value=1, max_value=9,step=1, placeholder="")
+education = st.number_input("What is their education level (1-8)",min_value=1, max_value=8,step=1, placeholder="-")
+parent = st.number_input("Are they a parent? (1-Yes,0-No)", min_value=0,max_value=1,step=1, placeholder="-")
+married = st.number_input("Are they married? (1-Yes,0-No)", min_value=0,max_value=1,step=1, placeholder="-")
+gender = st.number_input("What is their gender? (1-Male,0-Female)", min_value=0,max_value=1,step=1, placeholder="-")
 age = st.number_input("What is their age?",step=1, placeholder="")
 
 ui_person.extend([income, education, parent, married, gender, age])
 
-if income > 0 & education > 0 & age > 0:
-    predicted_class = lr.predict([ui_person])
-    probs = lr.predict_proba([ui_person])
-    if predicted_class == 1:
-        st.write("#### This person is likely a LinkedIn user")
-    else:
-        st.write("#### This person is likely not a LinkedIn user")
-    st.write(f"#### The probability that this person is a LinkedIn user is: {probs[0][1]}")
+
+predicted_class = lr.predict([ui_person])
+probs = lr.predict_proba([ui_person])
+if predicted_class == 1:
+    st.write("#### This person is likely a LinkedIn user")
 else:
-    st.write("#### Please enter appropriate values for Income, Education, and/or Age")
+    st.write("#### This person is likely not a LinkedIn user")
+    
+st.write(f"#### The probability that this person is a LinkedIn user is: {probs[0][1]}")
