@@ -13,20 +13,20 @@ st.markdown("Please enter values for all of the user features below:")
 st.write("""
          Use this information below for income & education levels:\n
          For income:\n
-            1	Less than $10,000\t\t               2	10 to under $20,000\n
-            3	20 to under $30,000\t\t            4	30 to under $40,000\n
-            5	40 to under $50,000\t\t             6	50 to under $75,000\n
-            7	75 to under $100,000\t\t            8	100 to under $150,000\n
+            1   Less than $10,000\t             2	10 to under $20,000\n
+            3	20 to under $30,000\t           4	30 to under $40,000\n
+            5	40 to under $50,000\t           6	50 to under $75,000\n
+            7	75 to under $100,000\t          8	100 to under $150,000\n
             9	$150,000 or more\n
          For education:\n
             1	Less than high school (Grades 1-8 or no formal schooling)\n
             2	High school incomplete (Grades 9-11 or Grade 12 with NO diploma)\n
             3	High school graduate (Grade 12 with diploma or GED certificate)\n
-         4	Some college, no degree (includes some community college)\n
-         5	Two-year associate degree from a college or university\n
-         6	Four-year college or university degree/Bachelors degree (e.g., BS, BA, AB)\n
-         7	Some postgraduate or professional schooling, no postgraduate degree (e.g. some graduate school)\n
-         8	Postgraduate or professional degree (e.g., MA, MS, PhD, MD, JD)
+            4	Some college, no degree (includes some community college)\n
+            5	Two-year associate degree from a college or university\n
+            6	Four-year college or university degree/Bachelors degree (e.g., BS, BA, AB)\n
+            7	Some postgraduate or professional schooling, no postgraduate degree (e.g. some graduate school)\n
+            8	Postgraduate or professional degree (e.g., MA, MS, PhD, MD, JD)
          """)
 
 def clean_sm(x):
