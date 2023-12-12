@@ -71,10 +71,9 @@ if income > 0 & education > 0 & age > 0:
     predicted_class = lr.predict([ui_person])
     probs = lr.predict_proba([ui_person])
     if predicted_class == 1:
-        st.write("### This person is likely a LinkedIn user")
+        st.write("#### This person is likely a LinkedIn user")
     else:
-        st.write("### This person is likely not a LinkedIn user")
+        st.write("#### This person is likely not a LinkedIn user")
+    st.write(f"#### The probability that this person is a LinkedIn user is: {probs[0][1]}")
 else:
-    st.write("### Please enter appropriate values for Income, Education, and/or Age")
-
-st.write(f"### The probability that this person is a LinkedIn user is: {probs[0][1]}")
+    st.write("#### Please enter appropriate values for Income, Education, and/or Age")
