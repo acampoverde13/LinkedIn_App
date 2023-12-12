@@ -71,9 +71,9 @@ predicted_class = lr.predict([ui_person])
 probs = lr.predict_proba([ui_person])
 
 if predicted_class == 1:
-    st.write("##This person is likely a LinkedIn user")
+    st.write("## This person is likely a LinkedIn user")
 else:
-    st.write("##This person is likely not a LinkedIn user")
+    st.write("## This person is likely not a LinkedIn user")
 
 #st.write(f"This person is likely class: {predicted_class[0]}") # 0=not LinkedIn user, 1=LinkedIn user
-st.write(f"##The probability that this person is a LinkedIn user is: {probs[0][1]}")
+st.write(f"## The probability that this person is a LinkedIn user is: {probs[0][1]}")
