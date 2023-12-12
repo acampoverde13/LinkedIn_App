@@ -58,7 +58,7 @@ lr.fit(X_train, y_train)
 y_pred = lr.predict(X_test)
 ui_person = []
 
-income = st.number_input("What is their income level (1-9)",min_value=1, max_value=9,step=1, placeholder="")
+income = st.number_input("What is their income level (1-9)",min_value=1, max_value=9,value= None,step=1, placeholder="")
 education = st.number_input("What is their education level (1-8)",min_value=1, max_value=8,step=1, placeholder="-")
 parent = st.number_input("Are they a parent? (1-Yes,0-No)", min_value=0,max_value=1,step=1, placeholder="-")
 married = st.number_input("Are they married? (1-Yes,0-No)", min_value=0,max_value=1,step=1, placeholder="-")
