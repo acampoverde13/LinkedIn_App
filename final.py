@@ -9,7 +9,7 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
 
 st.markdown("## Welcome to the LinkedIn User Prediction Tool!")
-st.markdown("###Please enter values for all of the user features below:")
+st.markdown("### Please enter values for all of the user features below:")
 st.write("""
          Use this information below for income & education levels:\n
          For income:\n
