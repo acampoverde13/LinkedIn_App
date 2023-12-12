@@ -23,14 +23,14 @@ st.write("""
             8	100 to under $150,000\n
             9	$150,000 or more\n
          For education:\n
-            1	Less than high school (Grades 1-8 or no formal schooling)\n
-            2	High school incomplete (Grades 9-11 or Grade 12 with NO diploma)\n
-            3	High school graduate (Grade 12 with diploma or GED certificate)\n
-            4	Some college, no degree (includes some community college)\n
-            5	Two-year associate degree from a college or university\n
-            6	Four-year college or university degree/Bachelors degree (e.g., BS, BA, AB)\n
-            7	Some postgraduate or professional schooling, no postgraduate degree (e.g. some graduate school)\n
-            8	Postgraduate or professional degree (e.g., MA, MS, PhD, MD, JD)\n
+            1\tLess than high school (Grades 1-8 or no formal schooling)\n
+            2\tHigh school incomplete (Grades 9-11 or Grade 12 with NO diploma)\n
+            3\tHigh school graduate (Grade 12 with diploma or GED certificate)\n
+            4\tSome college, no degree (includes some community college)\n
+            5\tTwo-year associate degree from a college or university\n
+            6\tFour-year college or university degree/Bachelors degree (e.g., BS, BA, AB)\n
+            7\tSome postgraduate or professional schooling, no postgraduate degree (e.g. some graduate school)\n
+            8\tPostgraduate or professional degree (e.g., MA, MS, PhD, MD, JD)\n
          """)
 
 def clean_sm(x):
